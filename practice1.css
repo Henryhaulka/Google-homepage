@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    
+   padding: 0;
+   margin: 0;
+    
+}
+nav {
+    float: right;
+    width: 200px;
+    
+    height:auto;
+    padding: 20px;  
+}
+nav a:hover{
+    text-decoration: underline;
+}
+main {
+    text-align: center;
+}
+img {
+    max-width: 700px;
+    margin: auto;
+    padding: 50px;
+    margin-left: 200px;
+    padding-top: 150px;
+}
+input {
+    font-size: 30px;
+    border-radius: 20px;
+    width: 500px;
+    border: 1px solid rgb(220, 224, 223);
+height: 50px;
+outline: none;
+box-shadow: 2px 2px 4px chartreuse;
+}
+
+input:hover{
+    border: 1px solid rgb(220, 224, 223);
+}
+.container {
+    position: relative;
+}
+.container input {
+    padding-left: 40px;
+}
+#sea { position: absolute;
+    top: 0;
+    left: 410px;
+    padding: 10px;
+    font-size: 30px;
+    padding-left: 30px;
+    opacity: 0.3;
+}
+#mic {
+    position: absolute;
+    top: 0;
+    right: 430px;
+    padding-right: 30px;
+    font-size: 30px;
+    padding: 10px;
+    color: blue;    
+}
+a {
+    text-decoration: none;
+
+}
+ 
+
+#h {
+    background-color: rgb(93, 91, 201);
+    border-radius: 45%;
+    color: white;
+    padding: 10px;
+}
+#bl {
+    color: black;
+}
+.bd {
+    padding: 20px;
+}
+.bd a {
+    padding: 10px;
+    background-color: rgb(202, 202, 212);
+    border-radius: 5px;
+    transition: 1s ease;
+}
+.bd a:hover {
+    opacity: 0.8;
+    border: 1px solid grey;
+}
+#lg a {
+    padding: 40px 2px;
+}
+#lg a :hover {
+    text-decoration: underline;
+}
+footer {
+    padding-top: 150px;
+    bottom: 0;
+    
+}
+.nig {
+    background-color: rgb(202, 202, 212);  
+    border-top:1px solid rgb(87, 82, 75) ;
+    width: 100%;
+    padding: 7px;
+    display: block;
+float: left;
+color: grey;   
+} 
+#ft {
+    background-color: rgb(202, 202, 212); 
+    border-bottom: 1px solid rgb(87, 82, 75) ; 
+    border-top:1px solid rgb(87, 82, 75) ;
+    width: 100%;
+    padding: 8px;
+    display: block;
+    float: left;
+  
+}
+#ft a {
+        color: grey;} 
+ #ft a:hover {
+        text-decoration: underline;
+    }
+
+.rt {
+    float: right;
+}
+
+    
+
+
