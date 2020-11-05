@@ -2,24 +2,31 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width:device-width" initial-scale="1.0">
+
 <link rel="stylesheet" href="practice1.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
+    
     <nav>
-<a href="#gmail" id="bl">Gmail</a>&nbsp;&nbsp;
-<a href="#images" id="bl">Images</a>&nbsp;&nbsp;
-<a href="#heas" id=h >H</a>
-    </nav>
-    <Main id="main">
+        <a href="#gmail" id="bl">Gmail</a>
+        <a href="#images" id="bl">Images</a>
+        <a href="#heas" id=h >Sign In</a>
+            </nav> <br>
+
+    <main>
+        <div id="man">
+            
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
-<div class="container">
-        <input type="search" id="search" name="search" placeholder="Search.....">
-<i class="material-icons" id="mic">mic</i>
-<i class="material-icons" id="sea">search</i>
+<div class="contain">
+    <i class="material-icons" id="sea">search</i>
+        <input type="text" id="search" name="search"  placeholder="Search Google or type a URL">
+        <img src="data:image/png;base64,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" alt="" style="width:20px ;height: 22px;" id="mic">
 </div><br>
 <div class=bd>
     <a href="">
@@ -33,7 +40,8 @@
     <a href="#yoruba">Èdè Yorùbá</a>
     <a href="pidgin">Nigerian Pidgin</a>
 </div>
-</Main>
+</div>
+
 <footer>
 <div class=nig>
     Nigeria
@@ -51,23 +59,6 @@
 </div>
 
 </footer>
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 
